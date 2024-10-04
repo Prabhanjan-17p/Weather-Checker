@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(83, 103, 97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBack {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+}
+
+.imgBack2 {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+#mainBox {
+  height: 59vh;
+  width: 41vw;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: 15px 13px 10px;
+  transition: all 0.5s;
+}
+
+#mainBox:hover {
+  box-shadow: 10px 13px 25px;
+  border: 2px solid rgba(188, 13, 98, 0.856);
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nameHeadOfApp {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  font-family: "Mulish", sans-serif;
+}
+
+.field {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#searchIcon {
+  height: 34px;
+  width: 36px;
+}
+
+.inputSearchBox {
+  position: relative;
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+}
+
+.inputSearch:focus,
+.inputSearch:valid {
+  padding: 0 12px;
+}
+
+.inputSearch {
+  height: 36px;
+  width: 18vw;
+  transition: 0.3s ease;
+  border-top-left-radius: 9px;
+}
+
+.labelSearch {
+  position: absolute;
+  padding: 0 12px;
+  transition: 0.3s ease;
+  background-color: white;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+
+.inputSearch:focus,
+.inputSearch:valid {
+  color: black;
+  border: 2px solid #66ff00;
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 0;
+}
+
+.inputSearch:focus+.labelSearch,
+.inputSearch:valid+.labelSearch {
+  font-size: 19px;
+  color: rgb(26, 21, 106);
+  line-height: 23px;
+  padding: 0 12px;
+  transform: translate(-9px, -19px) scale(0.88);
+  z-index: 1111;
+  margin-left: 15px;
+  opacity: 1;
+}
+
+#btnSearch {
+  background: transparent;
+  border: 1px solid;
+  border-bottom-right-radius: 9px;
+}
+
+#btnSearch:hover {
+  cursor: pointer;
+}
+
+.inputSearch:focus+.btnAction,
+.inputSearch:active+.btnAction {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 0;
+}
+
+#displayWeather {
+  margin-left: 50px;
+  margin-top: 12px;
+  font-family: "Mulish", sans-serif;
+}
+
+.enterLocationName {
+  font-size: 32px;
+}
+
+.tempShow {
+  display: flex;
+  justify-content: center;
+  gap: 9vw;
+  margin-top: 9px;
+}
+
+.enterLocationTem {
+  font-size: 64px;
+  font-family: "Mulish", sans-serif;
+}
+
+.videoCloud {
+  border: none;
+  width: 75px;
+}
+
+.speedHumidy {
+  margin-top: 23px;
+  display: flex;
+  justify-content: center;
+  gap: 125px;
+}
+
+.speedHumidyBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.speedHumidyBox img {
+  height: 52px;
+  width: 52px;
+}
+
+.error {
+  color: red;
+  font-family: "Mulish", sans-serif;
+  margin-top: 8px;
+}
+
+.error h4 {
+  text-align: center;
+}
+
+.NotAllowedLocation{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  font-family: "Mulish", sans-serif;
+}
+
+.NotAllowedLocation img {
+  margin-bottom: 30px;
+  width: 170px;
+}
+
+.firtsCutstyleBoox{
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 12px 0;
+}
+
+.firtsCutstyleBoox2{
+  height: 38.6vh;
+  background: transparent;
+  background: linear-gradient(135deg,#00feba27 ,#5b548a7b);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.enterLocationHumidity{
+  margin-top: 12px;
+}
+
+.enterLocationSpeed{
+  margin-top: 12px;
+}
+
+/* This CSS work in mobile (Means Responsive) */
+@media screen and (max-width:1300px) {
+  .NotAllowedLocation{
+    display: none;
+  }
+  #mainBox{
+    height: 56.5vh;
+    width: 78vw;
+  }
+  #nameHeadOfApp{
+    font-size: 23px;
+  }
+  .inputSearch{
+    width: 90%;
+  }
+  .error h4{
+    font-size: 14px;
+  }
+  body{
+    height: 100vh;
+    width: 100vw;
+  }
+  #displayWeather{
+    margin-left: 26px;
+  }
+  .enterLocationName{
+    font-size: 29px;
+  }
+  .enterLocationDateTime{
+    font-size: 10px;
+  }
+  .tempShow{
+    margin-top: 12px;
+  }
+  .enterLocationTem{
+    font-size: 52px;
+  }
+  .videoCloud{
+    width: 60px;
+  }
+  .speedHumidy{
+    margin-top: 22px;
+  }
+  .newIMGHS{
+    margin-bottom: 12px;
+ 
+  }
+  .enterLocationHumidity{
+    font-size: 14px;
+  }
+  .enterLocationSpeed{
+    font-size: 14px;
+  }
+}

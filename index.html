@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="imgBack" src="n-transformed.jpeg" alt="">
+    <div id="mainBox">
+        <div id="box" class="boxx">
+            <div class="firtsCutstyleBoox">
+                <h1 id="nameHeadOfApp">Weather Checker</h1>
+                <div class="inputSearchBox">
+                    <div class="field">
+                        <input type="input" class="inputSearch" name="name" id='name' required />
+                        <label for="name" class="labelSearch">Search.....</label>
+                    </div>
+                    <button id="btnSearch" class="btnAction"><img id="searchIcon" src="icons8-search-128.png"
+                            alt=""></button>
+                </div>
+            </div>
+            <div class="firtsCutstyleBoox2">
+                <div class="error">
+                    <h4>Please Enter Correct City Name!</h4>
+                </div>
+                <div id="displayWeather">
+                    <h3 class="enterLocationName">kolkata</h3>
+                    <h5 class="enterLocationDateTime">30 Aug 2024</h5>
+                </div>
+                <div class="tempShow">
+                    <h1 class="enterLocationTem">20°C</h1>
+                    <img class="videoCloud" src="mist.png" alt="">
+                </div>
+                <div class="speedHumidy">
+                    <div class="speedHumidyBox1 speedHumidyBox">
+                        <img class="newIMGHS" src="humidity.png" alt="">
+                        <h4 class="enterLocationHumidity">Humidity: 65%</h4>
+                    </div>
+                    <div class="speedHumidyBox2 speedHumidyBox">
+                        <img class="newIMGHS" src="speed.png" alt="">
+                        <h4 class="enterLocationSpeed">Speed: 15 km/h</h4>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="NotAllowedLocation">
+        <img src="DKke.gif" alt="">
+        <h2>Location Access Denied!.</h2>
+        <p>Please Try Another One And Allow Location Access First.</p>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
